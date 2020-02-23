@@ -1,2 +1,3 @@
-# bot-telegram-example-telegraf_API
- API: telegraf.js.org. Управляет альбомами фотографий.
+# telegram-bot-picture.helper
+
+### API: telegraf.js.org. Управляет альбомами фотографий.

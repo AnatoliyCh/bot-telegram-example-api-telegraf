@@ -1,0 +1,25 @@
+{
+  "name": "picture.helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/index.js",
+    "build": "npx tsc && npm run copy_fireBase",
+    "copy_fireBase": "ncp ./src/config/YOUR_FILE.json ./dist/config/YOUR_FILE.json",
+    "copy_package": "ncp ./package.json ./dist/package.json && ncp ./package-lock.json ./dist/package-lock.json && ncp ./Procfile ./dist/Procfile"
+  },
+  "keywords": [],
+  "author": "Anatoly",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^8.9.2",
+    "ncp": "^2.0.0",
+    "request": "^2.88.2",
+    "telegraf": "^3.36.0"
+  },
+  "devDependencies": {
+    "@types/request": "^2.48.4",
+    "typescript": "^3.7.5"
+  }
+}
